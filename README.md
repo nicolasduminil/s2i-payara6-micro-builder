@@ -28,7 +28,7 @@ docker pull nicolasduminil/payara6-micro-s2i-builder:latest
 Create a container to run the image
 
 ```shell
-docker run --name <container-name> nicolasduminil/payara6-micro-s2i-builder:latest
+docker run --name <container-name> -p 8080:8080 -p 8181:8181 nicolasduminil/payara6-micro-s2i-builder:latest
 ```
 
 #### Environment Variables
